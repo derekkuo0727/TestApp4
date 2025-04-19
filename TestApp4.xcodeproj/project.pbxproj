@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		048513FE2DB377EB00526F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04416A472DB373FD0013EB11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04416A4E2DB373FD0013EB11;
+			remoteInfo = TestApp4;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		04416A4F2DB373FD0013EB11 /* TestApp4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		048513F82DB377EB00526F44 /* TestApp4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestApp4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = TestApp4;
 			sourceTree = "<group>";
 		};
+		048513F92DB377EB00526F44 /* TestApp4UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TestApp4UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04416A4C2DB373FD0013EB11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048513F52DB377EB00526F44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				04416A512DB373FD0013EB11 /* TestApp4 */,
+				048513F92DB377EB00526F44 /* TestApp4UITests */,
 				04416A502DB373FD0013EB11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				04416A4F2DB373FD0013EB11 /* TestApp4.app */,
+				048513F82DB377EB00526F44 /* TestApp4UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = 04416A4F2DB373FD0013EB11 /* TestApp4.app */;
 			productType = "com.apple.product-type.application";
 		};
+		048513F72DB377EB00526F44 /* TestApp4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048514022DB377EB00526F44 /* Build configuration list for PBXNativeTarget "TestApp4UITests" */;
+			buildPhases = (
+				048513F42DB377EB00526F44 /* Sources */,
+				048513F52DB377EB00526F44 /* Frameworks */,
+				048513F62DB377EB00526F44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048513FF2DB377EB00526F44 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				048513F92DB377EB00526F44 /* TestApp4UITests */,
+			);
+			name = TestApp4UITests;
+			packageProductDependencies = (
+			);
+			productName = TestApp4UITests;
+			productReference = 048513F82DB377EB00526F44 /* TestApp4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					04416A4E2DB373FD0013EB11 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					048513F72DB377EB00526F44 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 04416A4E2DB373FD0013EB11;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				04416A4E2DB373FD0013EB11 /* TestApp4 */,
+				048513F72DB377EB00526F44 /* TestApp4UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		04416A4D2DB373FD0013EB11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048513F62DB377EB00526F44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		048513F42DB377EB00526F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048513FF2DB377EB00526F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04416A4E2DB373FD0013EB11 /* TestApp4 */;
+			targetProxy = 048513FE2DB377EB00526F44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		04416A5E2DB374030013EB11 /* Debug */ = {
@@ -315,6 +390,38 @@
 			};
 			name = Release;
 		};
+		048514002DB377EB00526F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = derekkuo.TestApp4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestApp4;
+			};
+			name = Debug;
+		};
+		048514012DB377EB00526F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = derekkuo.TestApp4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestApp4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +439,15 @@
 			buildConfigurations = (
 				04416A5E2DB374030013EB11 /* Debug */,
 				04416A5F2DB374030013EB11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048514022DB377EB00526F44 /* Build configuration list for PBXNativeTarget "TestApp4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048514002DB377EB00526F44 /* Debug */,
+				048514012DB377EB00526F44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,23 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [ develop, feature/** ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+            xcode-version: latest-stable
+      - name: Build and test
+        run: |
+              xcodebuild test \
+                -project TestApp4.xcodeproj \
+                -scheme TestApp4 \
+                -destination 'platform=macOS,arch=arm64'
