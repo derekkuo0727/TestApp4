@@ -15,16 +15,9 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
             xcode-version: latest-stable
-      - name: List available simulators
-        run: xcrun simctl list
-      - name: Create and boot simulator
-        run: |
-              UDID=$(xcrun simctl create TestDevice com.apple.CoreSimulator.SimDeviceType.iPhone-14 com.apple.CoreSimulator.SimRuntime.iOS-17-0)
-              xcrun simctl boot $UDID
-              echo "SIMULATOR_UDID=$UDID" >> $GITHUB_ENV
       - name: Build and test
         run: |
               xcodebuild test \
                 -project TestApp4.xcodeproj \
                 -scheme TestApp4 \
-                -destination "platform=iOS Simulator,id=${{ env.SIMULATOR_UDID }}"
+                -destination 'platform=macOS,arch=arm64'
